@@ -30,9 +30,9 @@
         color: #f8dce5;
         background: #38243e;
         padding: 8px 14px;
-         border: 1px solid #69445f;
+        border: 1px solid #69445f;
         border-radius: 999px;
-         text-decoration: none;
+        text-decoration: none;
         transition: background-color 0.2s, transform 0.2s;}
 
       nav a:hover {
@@ -52,6 +52,34 @@
   padding: 0;
   list-style: none;
   flex-direction: column;}
+
+
+     button[type="submit"] {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+  margin: 16px auto 0;
+  color: #f8dce5;
+  background: #38243e;
+  padding: 8px 14px;
+  border: 1px solid #69445f;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+  outline-offset: 3px;
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+  background: #70435f;
+  transform: translateY(-2px);
+}
+
+    /* O CSS do botão do formulário quase não funcionou, provavelmente porque declarei a cor do background duas vezes. Até guardei o original para comparar depois */
+
+    /* Outra observação é que o text-align (center) não vale para centralizar na página, ou melhor - ele centralizou o texto dentro do botão. Para mudar o lugar do botão em si, usei "margin: 16px auto 0;" */
 
     </style>
 </head>
@@ -87,7 +115,7 @@
                     </label>
                 </fieldset>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" aria-required="true">Enviar</button>
             </form>
         </section>
     </main>
