@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini site</title>
+
+    <style>
+        body {background-color:#261d38;  font-family: Arial, sans-serif; color: #f9f7f7; text-align: center; max-width: 800px; margin: 0 auto; padding: 20px;}
+
+        section {background-color: #402645; padding: 20px; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+        section { margin-bottom: 40px;}
+
+       header {display: inline-block; text-align: left; padding-left: 20px; margin: 12px auto;}
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        /* o justify-content, center, pareceu centralizar mais a lista de links em cima */
+        /* o gap aumenta a distancia entre as coisas */
+        /* padding transforma as coisas em botoes */
+        /* border-radius, semelhante a "raio do canto" arredonda a borda das coisas */
+        /* o atributo "hover" faz aquele efeito de mudança de cor sobre um item, quando vc passa o cursor do mouse */
+
+        nav a {
+        color: #f8dce5;
+        background: #38243e;
+        padding: 8px 14px;
+         border: 1px solid #69445f;
+        border-radius: 999px;
+         text-decoration: none;
+        transition: background-color 0.2s, transform 0.2s;}
+
+      nav a:hover {
+      background: #70435f;
+     transform: translateY(-2px);}
+
+        nav a:focus-visible {
+     outline: 2px solid #f08a9d;
+     outline-offset: 3px;}
+
+         nav ul {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;}
+
+  section ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 16px;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+     <header> 
+
+        <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:#dd6d7a"> Bem vindo </h1>
+        <nav>
+  <ul>
+    <li><a href="index.html">Página inicial</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Introdução</h2>
+            <p> Aqui está uma breve e enviesada lista de jogos de plataforma mobile favoritos, marcados pelo saudosismo e outros detalhes. Sujeito a modificações.</p>
+        </section>
+
+        <section>
+            <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Minha seleção</h2>
+    
+            <ul> 
+                <li> Cat bird</li>
+                <li> Kitty death room</li>
+                <li> Super Cat Tales</li>
+                <li> Level devel</li>
+                <li> Mimpi dreams </li>
+                <li> Outros que esqueci o nome</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
